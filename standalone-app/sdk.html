@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Standalone App</title>
+  <script type="module" async src="https://sdk.emperiavr.com/Production/latest/emperia-sdk.min.js"></script>
+
+  <script>
+
+    window.emperiaAsyncInit = function () {
+      emperia.init({
+        id: "experience-root",
+        experience_url:
+          "https://experience.emperiavr.com/f5c7b9a4-d1ef-491e-9650-6824a9eabb16/public/4cdc7760-1012-48da-9fb6-2dd79903d8a6/experience.html",
+        ui_url:
+          "https://ui.emperiavr.com/Standard-UI/Development/latest/static/",
+        attach_ui: true,
+        debug: false,
+        organization_id: "587accae-22f4-41e4-86c6-fa83d20e7f65",
+      });
+    };
+
+  </script>
+</head>
+
+<body>
+  <div id='experience-root' style="height: 100vh;"></div>
+
+</body>
+
+</html>
